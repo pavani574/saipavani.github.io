@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sai Pavani | Full Stack Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+--bg:#0f172a;--card:#1e293b;--text:#f8fafc;--accent:#38bdf8;--muted:#94a3b8;
+}
+.light{
+--bg:#ffffff;--card:#f5f7fa;--text:#111827;--accent:#2563eb;--muted:#4b5563;
+}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif;scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);transition:.3s}
+header{position:fixed;top:0;width:100%;background:rgba(15,23,42,.9);backdrop-filter:blur(10px);z-index:1000}
+nav{max-width:1200px;margin:auto;padding:18px 24px;display:flex;align-items:center}
+.logo{font-weight:700;font-size:1.4rem;color:var(--accent)}
+nav ul{display:flex;gap:24px;list-style:none;margin-left:auto;margin-right:20px}
+nav a{text-decoration:none;color:var(--text)}
+.toggle{cursor:pointer}
+.hero{min-height:100vh;display:flex;justify-content:center;align-items:center;text-align:center;padding:120px 20px}
+.hero h1{font-size:4rem;text-shadow:0 0 20px rgba(56,189,248,.3)}
+.hero h2{color:var(--accent);margin:10px 0}
+.hero p{max-width:800px;margin:20px auto;color:var(--muted);line-height:1.8}
+.btn{display:inline-block;padding:14px 28px;background:var(--accent);color:#00111f;text-decoration:none;border-radius:10px;font-weight:600}
+section{max-width:1200px;margin:auto;padding:90px 20px}
+.title{color:var(--accent);margin-bottom:25px;font-size:2rem}
+.card{background:var(--card);padding:25px;border-radius:18px;transition:.3s}
+.card:hover{transform:translateY(-8px)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.skills{display:flex;flex-wrap:wrap;gap:12px}
+.skill{background:var(--card);padding:10px 16px;border-radius:30px;border:1px solid rgba(56,189,248,.2)}
+.exp{border-left:4px solid var(--accent)}
+footer{text-align:center;padding:40px;background:#020617;color:#94a3b8}
+.reveal{opacity:0;transform:translateY(30px);transition:all .8s}
+.reveal.active{opacity:1;transform:none}
+#topBtn{position:fixed;bottom:20px;right:20px;border:none;padding:14px;border-radius:50%;display:none;cursor:pointer}
+@media(max-width:768px){.hero h1{font-size:2.5rem}nav ul{display:none}}
+</style>
+</head>
+<body>
+<header>
+<nav>
+<div class="logo">Sai Pavani</div>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#stack">Tech Stack</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#achievements">Achievements</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+<div class="toggle" onclick="toggleTheme()">🌙</div>
+</nav>
+</header>
+
+<section class="hero">
+<div>
+<h1>Sai Pavani</h1>
+<h2>Full Stack Developer • 5+ Years Experience</h2>
+<p>
+Full Stack Developer with 5+ years of experience designing, developing and maintaining enterprise applications.
+Experienced in React JS, Python, FastAPI, REST APIs, CI/CD automation and modern software engineering practices.
+Passionate about building scalable, secure and user-focused solutions that deliver real business value.
+</p>
+<a href="#contact" class="btn">Let's Connect</a>
+</div>
+</section>
+
+<section id="about" class="reveal">
+<h2 class="title">About Me</h2>
+<div class="card">
+<p>I am a Full Stack Developer with over five years of experience working on enterprise applications and business-critical systems.</p><br>
+<p>My expertise spans frontend development with React JS, backend API development using Python and FastAPI, testing automation, CI/CD implementation and deployment management.</p><br>
+<p>I enjoy solving complex technical challenges, improving application performance and collaborating with cross-functional teams to deliver reliable and scalable software solutions.</p>
+</div>
+</section>
+
+<section class="reveal">
+<h2 class="title">What I Do</h2>
+<div class="grid">
+<div class="card"><h3>Frontend Development</h3><p>Building responsive and modern user interfaces using React JS, JavaScript, HTML5 and CSS3.</p></div>
+<div class="card"><h3>Backend Development</h3><p>Designing APIs, integrations and business logic using Python, FastAPI and REST architectures.</p></div>
+<div class="card"><h3>Software Delivery</h3><p>Supporting testing, CI/CD pipelines, deployment automation and release management.</p></div>
+</div>
+</section>
+
+<section id="stack" class="reveal">
+<h2 class="title">Tech Stack Snapshot</h2>
+<div class="grid">
+<div class="card"><b>Frontend</b><br>React JS, JavaScript, HTML5, CSS3, Web Components, Lit</div>
+<div class="card"><b>Backend</b><br>Python, FastAPI, REST APIs, Node JS</div>
+<div class="card"><b>DevOps & Tools</b><br>Git, Azure DevOps, CI/CD</div>
+<div class="card"><b>Database & Testing</b><br>PostgreSQL, MySQL, Mocha, Chai, Sinon</div>
+</div>
+</section>
+
+<section id="skills" class="reveal">
+<h2 class="title">Technical Skills</h2>
+<div class="skills">
+<span class="skill">React JS</span><span class="skill">JavaScript</span><span class="skill">HTML5</span>
+<span class="skill">CSS3</span><span class="skill">Web Components</span><span class="skill">Lit</span>
+<span class="skill">Python</span><span class="skill">FastAPI</span><span class="skill">Node JS</span>
+<span class="skill">REST APIs</span><span class="skill">PostgreSQL</span><span class="skill">MySQL</span>
+<span class="skill">Git</span><span class="skill">Azure DevOps</span><span class="skill">CI/CD</span>
+<span class="skill">AI Agents</span>
+</div>
+</section>
+
+<section id="experience" class="reveal">
+<h2 class="title">Professional Experience</h2>
+<div class="card exp">
+<h3>Tata Consultancy Services</h3>
+<p><strong>Full Stack Developer | March 2021 – Present</strong></p><br>
+<p>Contributing to enterprise application development across frontend and backend systems while collaborating with Agile teams.</p>
+<ul>
+<li>Developed scalable web applications and reusable UI components.</li>
+<li>Built backend APIs and integrations using Python and FastAPI.</li>
+<li>Improved application performance, reliability and maintainability.</li>
+<li>Implemented testing and automation practices.</li>
+<li>Managed CI/CD deployments and release activities.</li>
+<li>Mentored team members and supported engineering best practices.</li>
+</ul>
+</div>
+</section>
+
+<section id="achievements" class="reveal">
+<h2 class="title">Achievements & Certifications</h2>
+<div class="grid">
+<div class="card"><h3>🏆 Beyond Excellence Award</h3><p>Recognized for leadership and delivery excellence.</p></div>
+<div class="card"><h3>🏆 Star of the Month</h3><p>Recognized for outstanding performance and team contribution.</p></div>
+<div class="card"><h3>🏆 On-the-Spot Team Award</h3><p>Recognized for delivering critical features under tight timelines.</p></div>
+<div class="card">📜 Cisco AI Practitioner</div>
+<div class="card">📜 Machine Learning Certification</div>
+<div class="card">📜 Agile Competency Certification</div>
+</div>
+</section>
+
+<section id="contact" class="reveal">
+<h2 class="title">Contact</h2>
+<div class="card" style="text-align:center">
+<h3>Let's Connect</h3>
+<p><a href="mailto:u.pavani2016@gmail.com" style="color:var(--accent)">u.pavani2016@gmail.com</a></p>
+<p>Hyderabad, India</p>
+</div>
+</section>
+
+<footer>
+<h3>Sai Pavani</h3>
+<p>Full Stack Developer</p>
+<p>Building scalable web applications with modern technologies.</p>
+<p>© 2026 All Rights Reserved</p>
+</footer>
+
+<button id="topBtn">↑</button>
+
+<script>
+function toggleTheme(){
+document.body.classList.toggle('light');
+localStorage.setItem('theme',document.body.classList.contains('light')?'light':'dark');
+}
+if(localStorage.getItem('theme')==='light'){document.body.classList.add('light');}
+const reveals=document.querySelectorAll('.reveal');
+window.addEventListener('scroll',()=>{
+reveals.forEach(el=>{
+if(el.getBoundingClientRect().top<window.innerHeight-100){el.classList.add('active');}
+});
+const btn=document.getElementById('topBtn');
+btn.style.display=window.scrollY>300?'block':'none';
+});
+document.getElementById('topBtn').onclick=()=>window.scrollTo({top:0,behavior:'smooth'});
+</script>
+</body>
+</html>
